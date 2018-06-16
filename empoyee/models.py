@@ -21,7 +21,7 @@ class DeptEmp(models.Model):
     emp_no = models.ForeignKey('Employees', models.DO_NOTHING, db_column='emp_no', primary_key=True)
     dept_no = models.ForeignKey(Departments, models.DO_NOTHING, db_column='dept_no')
     from_date = models.DateField()
-    to_date = models.DateField()
+    #to_date = models.DateField()
 
     class Meta:
         managed = False
